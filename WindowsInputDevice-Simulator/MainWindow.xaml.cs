@@ -1,33 +1,33 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO.Ports;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace WindowsInputDevice_Simulator
 {
-    /// <summary>
-    /// Lógica de interacción para MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        SerialPort port = new SerialPort();
         public MainWindow()
         {
             InitializeComponent();
+            configurePort(port);
+            if (!port.IsOpen)
+                port.Open();
+        }
+        
+        public void configurePort(SerialPort p)
+        {
+            port.BaudRate = 9600;
+            port.PortName = "COM20";
+            port.DtrEnable = true;
+            port.DtrEnable = true;
+            port.Parity = Parity.None;
+            port.DataBits = 8;
         }
 
-        private void closeApp(object sender, RoutedEventArgs e)
+        public void sendKeystroke(object sender, EventArgs e)
         {
-            this.Close();
+            port.WriteLine("+");
         }
     }
 }

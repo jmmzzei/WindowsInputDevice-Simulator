@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WindowsInputDevice_Simulator"
         mc:Ignorable="d"
- Title="MainWindow" Height="185" Width="165"  ResizeMode="NoResize" Background="Transparent">
+ Title="MainWindow" Height="189" Width="166"  ResizeMode="NoResize" Background="Transparent">
     <Grid>
-        <Button x:Name="btn1" Content="Click" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#111111" Width="50" Margin="0,0,0,0" Background="#00DDDD" Click="sendKeystroke" Height="50"/>
-        <Button x:Name="btn2" Content="Long" HorizontalAlignment="Center" VerticalAlignment="Top" Width="50" BorderBrush="#111111" Margin="0,0,0,0" Background="#00DDDD" Click="sendKeystroke" Height="50"/>
-        <Button x:Name="btn3" Content="Double" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="50" BorderBrush="#111111" Margin="0,0,0,0" Background="#00DDDD" Click="sendKeystroke" Height="50"/>
-        <Button x:Name="btn4" Content="+" HorizontalAlignment="Right" VerticalAlignment="Center" Width="50" BorderBrush="#111111" Margin="0,0,0,0" Background="#00DDDD" Click="sendKeystroke" Height="50"/>
-        <Button x:Name="btn5" Content="-" HorizontalAlignment="Left" VerticalAlignment="Center" Width="50" BorderBrush="#111111" Margin="0,0,0,0" Background="#00DDDD" Click="sendKeystroke" Height="50"/>
+        <Button x:Name="btn1" Content="Click" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="Transparent" Width="50" Margin="0,0,0,0" Background="#ffffff" Click="sendKeystroke" Height="50"/>
+        <Button x:Name="btn2" Content="Long" HorizontalAlignment="Center" VerticalAlignment="Top" Width="50" BorderBrush="Transparent" Margin="0,0,0,0" Background="#ffffff" Click="sendKeystroke" Height="50"/>
+        <Button x:Name="btn3" Content="Double" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="50" BorderBrush="Transparent" Margin="0,0,0,0" Background="#ffffff" Click="sendKeystroke" Height="50"/>
+        <Button x:Name="btn4" Content="+" HorizontalAlignment="Right" VerticalAlignment="Center" Width="50" BorderBrush="Transparent" Margin="0,0,0,0" Background="#ffffff" Click="sendKeystroke" Height="50"/>
+        <Button x:Name="btn5" Content="-" HorizontalAlignment="Left" VerticalAlignment="Center" Width="50" BorderBrush="Transparent" Margin="0,0,0,0" Background="#ffffff" Click="sendKeystroke" Height="50"/>
     </Grid>
 </Window>

@@ -1,12 +1,22 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO.Ports;
 using System.Windows;
-
+using System.Windows.Controls;
 namespace WindowsInputDevice_Simulator
 {
     public partial class MainWindow : Window
     {
+        Dictionary<string, string> keystroke = new Dictionary<string, string>
+        {
+            {"Double", "d" },
+            {"Long", "l" },
+            {"Click", "c" },
+            {"+", "p" },
+            {"-", "m" }
+        };
         SerialPort port = new SerialPort();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +37,7 @@ namespace WindowsInputDevice_Simulator
 
         public void sendKeystroke(object sender, EventArgs e)
         {
-            port.WriteLine("+");
+            port.Write(keystroke[((Button)sender).Content.ToString()]);
         }
     }
 }

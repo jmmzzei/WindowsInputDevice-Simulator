@@ -1,0 +1,17 @@
+﻿<Window x:Class="WindowsInputDevice_Simulator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WindowsInputDevice_Simulator"
+        mc:Ignorable="d"
+ Title="MainWindow" Height="155" Width="155" WindowStyle="None" ResizeMode="NoResize" Background="Transparent">
+    <Grid>
+        <Button x:Name="btn1" Content="Click" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="#111111" Width="50" Margin="0,0,0,0" Background="#00DDDD" Click="sendKeystroke" Height="50"/>
+        <Button x:Name="btn2" Content="Long" HorizontalAlignment="Center" VerticalAlignment="Top" Width="50" BorderBrush="#111111" Margin="0,0,0,0" Background="#00DDDD" Click="sendKeystroke" Height="50"/>
+        <Button x:Name="btn3" Content="Double" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="50" BorderBrush="#111111" Margin="0,0,0,0" Background="#00DDDD" Click="sendKeystroke" Height="50"/>
+        <Button x:Name="btn4" Content="+" HorizontalAlignment="Right" VerticalAlignment="Center" Width="50" BorderBrush="#111111" Margin="0,0,0,0" Background="#00DDDD" Click="sendKeystroke" Height="50"/>
+        <Button x:Name="btn5" Content="-" HorizontalAlignment="Left" VerticalAlignment="Center" Width="50" BorderBrush="#111111" Margin="0,0,0,0" Background="#00DDDD" Click="sendKeystroke" Height="50"/>
+        <Button x:Name="btn6" Content="x" HorizontalAlignment="Right" VerticalAlignment="Top" Width="25" BorderBrush="#111111" Margin="0,0,0,0" Background="#ea0000" Click="closeApp" Height="25"/>
+    </Grid>
+</Window>
